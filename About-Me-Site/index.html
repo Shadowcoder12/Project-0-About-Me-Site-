@@ -9,17 +9,22 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <nav>
+
+
+   <nav>
     <div class="nav-container">
     <ul>
-     <li class="welcome"><a href="#about">Welcome</a></li>
+      <div class="welcome">
+     <li class="left-welcome"><a href="#about">Welcome</a></li>
+     </div>
       <li><a href="#about">About</a></li>
-      <li><a href="#gallery">Projects</a></li>
-      <li><a href="blog.html">Quotes</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#Testimonials">Testimonials</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
   </nav>
+
 
 <section id="about">
    <h2>About Me</h2>
@@ -54,8 +59,8 @@
   </a>
     </div>
     <div class="item">
-      <a href="images/circle_portrait.png" data-toggle="lightbox">
-      <img class="d-block w-100 moving-image" src="images/circle_portrait.png" alt="second slide">
+      <a href="images/geoquakes_screenshot.png" data-toggle="lightbox">
+      <img class="d-block w-100 moving-image" src="images/geoquakes_screenshot.png" alt="second slide">
    </a>
     </div>
     <div class="item">
@@ -83,9 +88,9 @@
 
 
 
+<!-- Disply of Projects -->
 
-
-    <section class="article">
+    <section id="projects" class="article">
     <h2>Projects</h2>
 
     <div class="project-wrapper articles">
@@ -108,14 +113,50 @@
     </div>
   </section>
 
+  <!-- Testimonials -->
+
 <section id="Testimonials" class="callout about">
     <article class="Testimonials">
       <h2>Testimonials</h2>
-  <p class="quotes">first quote </p>
-<p class="quotes">second quote</p>
-<p class="quotes">third quote</p>
+  <p class="quotes">Hate is too great a burden to bear. It injures the hater more than it injures the hated. <br>
+<strong> —Coretta Scott King</strong> </p>
+<p class="quotes">Success is to be measured not so much by the position that one has reached in life as by the obstacles which he has overcome while trying to succeed. <br>
+ <strong> —Booker T. Washington </strong></p>
+<p class="quotes">Some people want it to happen, some wish it would happen, others make it happen. <br>
+ <strong> – Michael Jordan </strong></p>
     </article>
   </section>
+
+
+<!--  Contact Form -->
+
+  <section id="contact">
+    <h2 class="contact-header">Contact Me</h2>
+      <form class="contact">
+        <div class="form-wrap-columns">
+          <input type="text" placeholder="Full Name" class="col-3" >
+          <input type="email" placeholder="Email" class="col-3">
+          <input type="text" placeholder="Subject" class="col-3">
+        </div>
+        <div class="form-wrap-row">
+          <textarea cols="30" rows="10"  placeholder="Message"></textarea>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+  </section>
+
+<!-- Footer -->
+
+<footer>
+    <div class="footer-wrap">
+      <input type="text" placeholder="Email Address">
+      <button class="home" type="submit">Subscribe</button>
+
+    </div>
+
+    <p class="copyright">&copy;2019 Leonardo Fontenette</p>
+  </footer>
+
 
 
 

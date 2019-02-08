@@ -41,15 +41,24 @@ display: -ms-flexbox;
 border: 2px red solid;
 }
   nav {
-   /* position: fixed;*/
+    /*position: fixed;*/
     top: 0;
     left: 0;
     right: 0;
     background-color: white;
-    z-index: 100;
     border: 3px purple solid;
 }
 
+
+.welcome{
+  display: flex;
+  border: 2px purple solid;
+  float: left;
+}
+
+.left-welcome{
+
+}
 nav li {
   display: inline-block;
 }
@@ -98,6 +107,7 @@ display: -ms-flexbox;
 -webkit-box-pack: justify;
 -ms-flex-pack: justify;
 -ms-flex-wrap:  wrap;
+margin: 0 auto;
 }
 .col-third{
   width: 50%;
@@ -111,9 +121,12 @@ display: -ms-flexbox;
   border: 2px blue solid;
 }
 
-.col-half{
-  width: 40%;
+
+.col-half {
+  width:40%;
 }
+
+
 #about{
   /*background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);*/
   height: 550px;
@@ -132,31 +145,139 @@ display: -ms-flexbox;
 /* ----------------------------------------
 Testimonals
 ------------------------------------------- */
+#Testimonials{
+  border: 3px green solid;
+  margin-top: 30px;
+  height: 300px;
 
-.Testimonals {
+}
+.Testimonials{
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
 
-.quote {
+.quotes{
   display: none;
+}
+
+/* ----------------------------------------
+Form
+------------------------------------------- */
+
+.form-wrap-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-wrap-row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.col-3 {
+  margin-right: 10px;
+}
+.col-3:last-of-type {
+  margin-right: 0;
+}
+
+
+/*textarea {
+  max-width: 100%;
+  display: block;
+}
+*/
+input, textarea, button {
+  border: 2px solid #44545E;
+  margin-bottom: 12px;
+  margin-bottom: .8rem;
+  padding: 20px 20px;
+  outline: 0;
+  flex: 1;
+}
+
+#contact{
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.contact-header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* ----------------------------------------
+Footer
+------------------------------------------- */
+
+footer{
+  background-color: lightblue;
+}
+
+.footer-wrap{
+  margin-top: 50px;
+  padding-top:20px;
+  padding-bottom: 30px;
+}
+
+.copyright {
+  border-top: 2px solid #44545E;
+  padding: 15px 0 3px;
+  padding-bottom: 20px;
 }
 
 
 
+/* ----------------------------------------
+          Media Queries
+------------------------------------------- */
+
+@media screen and (max-width: 750px) {
+
+.project-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.col-third{
+  width: 100%;
+}
+
+.form-wrap-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 
 
 
+.about-wrapper{
+   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+form input {
+  width: 100%;
+}
+
+.col-half p {
+  width:100%;
+}
+
+/*.col-half img {
+  width:100%;
+}*/
 
 
 
-
-
-
-
-
-
+}
 
 
 
