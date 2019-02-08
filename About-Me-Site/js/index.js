@@ -10,16 +10,21 @@ console.log(`${love}`);
 
 
 
+
+
+// lightbox function
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+
+// Interval function for carousel
  $(document).ready(function(){
     $('.carousel').carousel();
 
-
-
-
     setInterval(function(){
       $('.carousel').carousel('next');
-    }, 2000);
-
+    }, 4000);
 
   });
 
