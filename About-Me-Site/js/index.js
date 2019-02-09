@@ -49,7 +49,6 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
 
  $(window).scroll(function() {
     var scrollbarLocation = $(this).scrollTop();
-console.log(scrollbarLocation);
     scrollLink.each(function() {
 
       var sectionOffset = $(this.hash).offset().top - 60 ;
@@ -61,15 +60,6 @@ console.log(scrollbarLocation);
     })
 
   })
-
-
-
-
-
-
-
-
-
 
 
   });

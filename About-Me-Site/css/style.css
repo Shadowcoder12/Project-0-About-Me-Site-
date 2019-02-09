@@ -49,19 +49,17 @@ h2{
     text-decoration: none;
 }
 
-textarea:invalid{
-  border: 2px solid red;
-}
+
 textarea:valid{
   border: 2px solid green;
 }
 
-input:invalid {
-  border: 2px solid red;
-}
 
 input:valid {
   border: 2px solid green;
+}
+form.submitted input:invalid{
+  border:1px solid red;
 }
 
 /* ----------------------------------------
@@ -171,11 +169,13 @@ img{
 .navbar-toggler{
   display: none;
   position: fixed;
-  right: 20px;
+  right: 2px;
   top: 20px;
   background-color: goldenrod;
   border: 1px black solid;
 }
+
+
 
 /* ----------------------------------------
 About Me
