@@ -44,6 +44,11 @@ h2{
   width: 100%;
 }
 
+ h5, a {
+    color: #0F2041;
+    text-decoration: none;
+}
+
 /* ----------------------------------------
 Navigation
 ------------------------------------------- */
@@ -182,7 +187,6 @@ margin: 0 auto;
    display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  border: 2px blue solid;
   margin-bottom: 300px;
 }
 
@@ -200,9 +204,7 @@ margin: 0 auto;
   position: relative;
   top: 100px;
 }
-.carousel-inner{
-  background: lightgrey;
-}
+
 
 .moving-image{
   margin: 0 auto;
@@ -240,6 +242,10 @@ Carousel
   margin-bottom: 100px;
 }
 
+.rgb h5 {
+  color:white;
+
+}
 /* ----------------------------------------
 Form
 ------------------------------------------- */
@@ -273,6 +279,7 @@ input, textarea, button {
   border: 2px solid #44545E;
   margin-bottom: 12px;
   margin-bottom: .8rem;
+  margin-top: 15px;
   padding: 20px 20px;
   outline: 0;
   flex: 1;
@@ -356,6 +363,10 @@ footer{
 
   span li {
     display: none;
+  }
+
+  .col-third img {
+    margin-top: 30px;
   }
 
 }
