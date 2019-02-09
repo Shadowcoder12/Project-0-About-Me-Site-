@@ -5,15 +5,6 @@ console.log(`${love}`);
 
 
 
-
-
-
-
-
-
-
-
-
 // Quote function that times
 (function() {
 
@@ -45,6 +36,41 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     setInterval(function(){
       $('.carousel').carousel('next');
     }, 4000);
+
+// scroll functionality
+    var scrollLink = $('.scroll');
+
+    scrollLink.click(function(e) {
+    e.preventDefault();
+    $('body,html').animate({
+      scrollTop: $(this.hash).offset().top
+    }, 1500 );
+  });
+
+ $(window).scroll(function() {
+    var scrollbarLocation = $(this).scrollTop();
+console.log(scrollbarLocation);
+    scrollLink.each(function() {
+
+      var sectionOffset = $(this.hash).offset().top ;
+
+      if ( sectionOffset <= scrollbarLocation ) {
+        $(this).parent().addClass('scrollActive');
+        $(this).parent().siblings().removeClass('scrollActive');
+      }
+    })
+
+  })
+
+
+
+
+
+
+
+
+
+
 
   });
 
