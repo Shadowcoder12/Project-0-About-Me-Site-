@@ -9,8 +9,7 @@ Base Styles
 
 html {
   font-size: 15px;
- /* scroll-behavior: smooth;*/
-  /*background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);*/
+  /* scroll-behavior: smooth;*/
 }
 
 body {
@@ -21,9 +20,9 @@ body {
   letter-spacing: .02em;
   text-align: center;
   color: #0F2041;
-   background: #ADA996;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ADA996;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -44,10 +43,11 @@ h2{
   width: 100%;
 }
 
- h5, a {
-    color: #0F2041;
-    text-decoration: none;
+h5, a {
+  color: #0F2041;
+  text-decoration: none;
 }
+
 
 
 textarea:valid{
@@ -57,9 +57,6 @@ textarea:valid{
 
 input:valid {
   border: 2px solid green;
-}
-form.submitted input:invalid{
-  border:1px solid red;
 }
 
 /* ----------------------------------------
@@ -151,9 +148,9 @@ img{
 }
 
 .navbar {
-    position: fixed;
-    min-height: 50px;
-    margin-bottom: 20px;
+  position: fixed;
+  min-height: 50px;
+  margin-bottom: 20px;
 }
 
 .navbar-collapse{
@@ -186,11 +183,11 @@ About Me
   justify-content: space-around;
   flex-wrap: wrap;
   display: -webkit-box;
-display: -ms-flexbox;
--webkit-box-pack: justify;
--ms-flex-pack: justify;
--ms-flex-wrap:  wrap;
-margin: 0 auto;
+  display: -ms-flexbox;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -ms-flex-wrap:  wrap;
+  margin: 0 auto;
 }
 .col-third{
   width: 50%;
@@ -198,10 +195,10 @@ margin: 0 auto;
 }
 
 .about-wrapper{
-   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 300px;
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ margin-bottom: 300px;
 }
 
 
@@ -222,8 +219,8 @@ margin: 0 auto;
 
 .moving-image{
   margin: 0 auto;
-   width: 800px;
-   height: 300px;
+  width: 800px;
+  height: 300px;
 }
 
 /* ----------------------------------------
@@ -314,11 +311,11 @@ Footer
 ------------------------------------------- */
 
 footer{
-   background: #ADA996;  /* fallback for old browsers */
-   background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   margin-top: 200px;
-    }
+ background: #ADA996;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ margin-top: 200px;
+}
 
 .copyright {
   padding: 15px 0 3px;
@@ -329,155 +326,59 @@ footer{
 
 /* ----------------------------------------
           Media Queries
-------------------------------------------- */
+          ------------------------------------------- */
 
-@media screen and (max-width: 768px) {
+          @media screen and (max-width: 768px) {
 
-  .navbar-toggler {
-    display: inline-block;
-  }
+            .navbar-toggler {
+              display: inline-block;
+            }
 
-  .project-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
+            .project-wrapper {
+              display: flex;
+              justify-content: space-between;
+              flex-direction: column;
+            }
 
-  .col-third{
-    width: 100%;
-  }
+            .col-third{
+              width: 100%;
+            }
 
-  .form-wrap-columns {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
+            .form-wrap-columns {
+              display: flex;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              flex-direction: column;
+            }
 
-  .about-wrapper{
-     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    overflow: scroll;
-  }
+            .about-wrapper{
+             display: flex;
+             justify-content: center;
+             flex-wrap: wrap;
+             flex-direction: column;
+             overflow: scroll;
+           }
 
-  form input {
-    width: 100%;
-  }
+           form input {
+            width: 100%;
+          }
 
-  .col-half p {
-    width:100%;
-  }
+          .col-half p {
+            width:100%;
+          }
 
-  .col-half img {
-    width:200px;
-    height: 200px;
-  }
+          .col-half img {
+            width:200px;
+            height: 200px;
+          }
 
-  span li {
-    display: none;
-  }
+          span li {
+            display: none;
+          }
 
-  .col-third img {
-    margin-top: 30px;
-  }
+          .col-third img {
+            margin-top: 30px;
+          }
 
-}
+        }
 
-
-
-
-
-/* ----------------------------------------
-Navigation
-------------------------------------------- */
- /** {
-  justify-content: center;
-  box-sizing: border-box;
- }
- body, html{
-    width:100%;
-    height: 100%;
-}
-nav {
-  position: fixed;
-  width: 100%;
-
-}
-
-*/
-
-
-/*.nav-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;*/
-  /*border: 2px red solid;*/
-/*  background-color: goldenrod;
-}*/
-/* display: inline block makes the li's display horizontally*/
-/*nav li {
-  display: inline-block;
-}*/
-
-/*nav a {
-  font-weight: 600;
-  letter-spacing: 0.75px;
-  letter-spacing: .05rem;
-  margin: 15px 25px;
-  display: inline-block;
-  border-bottom: none;
-  text-transform: uppercase;
-  text-decoration:none;
-  color: white;
-}*/
-
-/* ----------------------------------------
-Introduction of Me
-------------------------------------------- */
-/*  img {
-  width:250px;
-  height: 200px;
-  margin-left: 20px;
-}
-*/
-/*.intro-container{
-  display: flex;
-  flex-wrap: wrap;*/
-  /*border: 4px green solid;*/
-  /*height: 500px;
-  background:linear-gradient(to right, #E4E5E6, #00416A);
-  margin: 0 auto;*/
- /* justify-content: center;*/
-/*}*/
-/*.intro{
-  width: 30%;
-  max-width: 800px;
-  margin-top: 20px;
-}*/
-/*.image-Holder{
-  margin-top: 10px;
-}*/
-
-/*.about-container {
-  display: flex;
-}*/
-/*.about-info{
-  width: 30%;
-}*/
-
-  /*.about-image > img {
-    height: 500px;
-    width: 400px;
-    margin-top: 40px;
-  }*/
-
-   /*.about-info > h2:after {
-    background: rgba(144, 144, 144, 0.5);
-    content: '';
-    display: block;
-    height: 1px;
-    margin-top: 1em;
-    width: 5em;
-}*/
