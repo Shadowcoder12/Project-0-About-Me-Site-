@@ -9,6 +9,7 @@ Base Styles
 
 html {
   font-size: 15px;
+  scroll-behavior: smooth;
   /*background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);*/
 }
 
@@ -35,18 +36,21 @@ Navigation
   display: flex;
   justify-content: center;
   display: -webkit-box;
-display: -ms-flexbox;
--webkit-box-pack: center;
--ms-flex-pack: center;
-border: 2px red solid;
+  display: -ms-flexbox;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  border: 2px red solid;
+  overflow: hidden;
 }
-  nav {
-    /*position: fixed;*/
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: white;
-    border: 3px purple solid;
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 3px purple solid;
+  z-index: 1;
 }
 
 
@@ -85,8 +89,12 @@ nav a {
   display: inline-block;
   border-bottom: none;
   text-transform: uppercase;
-  text-decoration-line: none;
+  text-decoration: none;
   color: goldenrod;
+}
+
+.navbar-nav {
+  margin-top: 14px;
 }
 
 img{
@@ -94,6 +102,45 @@ img{
   height: 400px;
   width:  400px;
 }
+
+.hamburger{
+  color: grey;
+  font-size: 26px;
+  /*margin-bottom: 60%;*/
+  /*margin-right: 10%;*/
+  display: inline-block;
+  align-self: flex-start;
+  top: 10px;
+  left: 30px;
+  position: fixed;
+  mix-blend-mode: difference;
+}
+
+.navbar {
+    position: fixed;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid green;
+}
+
+.navbar-collapse{
+  float: right;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block !important;
+}
+
+
+.navbar-toggler{
+  display: none;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
 /* ----------------------------------------
 About Me
 ------------------------------------------- */
@@ -119,11 +166,13 @@ margin: 0 auto;
   justify-content: center;
   flex-wrap: wrap;
   border: 2px blue solid;
+  margin-bottom: 300px;
 }
 
 
-.col-half {
-  width:40%;
+.col-half p {
+  max-width:800px;
+  justify-content: center;
 }
 
 
@@ -131,6 +180,8 @@ margin: 0 auto;
   /*background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);*/
   height: 550px;
   margin: 0 auto;
+  position: relative;
+  top: 100px;
 }
 .carousel-inner{
   background: lightgrey;
@@ -159,6 +210,16 @@ Testimonals
 
 .quotes{
   display: none;
+}
+
+/* ----------------------------------------
+Carousel
+------------------------------------------- */
+
+
+#carouselExampleIndicators{
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 /* ----------------------------------------
@@ -235,47 +296,52 @@ footer{
           Media Queries
 ------------------------------------------- */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
 
-.project-wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
+  .navbar-toggler {
+    display: inline-block;
+  }
 
-.col-third{
-  width: 100%;
-}
+  .project-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
 
-.form-wrap-columns {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
+  .col-third{
+    width: 100%;
+  }
 
+  .form-wrap-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 
+  .about-wrapper{
+     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 
-.about-wrapper{
-   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
+  form input {
+    width: 100%;
+  }
 
-form input {
-  width: 100%;
-}
+  .col-half p {
+    width:100%;
+  }
 
-.col-half p {
-  width:100%;
-}
+  .col-half img {
+    width:200px;
+    height: 200px;
+  }
 
-/*.col-half img {
-  width:100%;
-}*/
-
-
+  span li {
+    display: none;
+  }
 
 }
 
