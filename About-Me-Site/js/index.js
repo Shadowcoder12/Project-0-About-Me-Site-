@@ -52,7 +52,7 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
 console.log(scrollbarLocation);
     scrollLink.each(function() {
 
-      var sectionOffset = $(this.hash).offset().top ;
+      var sectionOffset = $(this.hash).offset().top - 60 ;
 
       if ( sectionOffset <= scrollbarLocation ) {
         $(this).parent().addClass('scrollActive');

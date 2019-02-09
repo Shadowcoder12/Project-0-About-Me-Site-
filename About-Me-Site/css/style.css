@@ -49,6 +49,21 @@ h2{
     text-decoration: none;
 }
 
+textarea:invalid{
+  border: 2px solid red;
+}
+textarea:valid{
+  border: 2px solid green;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
 /* ----------------------------------------
 Navigation
 ------------------------------------------- */
@@ -141,7 +156,6 @@ img{
     position: fixed;
     min-height: 50px;
     margin-bottom: 20px;
-    border: 1px solid green;
 }
 
 .navbar-collapse{
@@ -216,7 +230,6 @@ margin: 0 auto;
 Testimonals
 ------------------------------------------- */
 #Testimonials{
-  border: 3px green solid;
   margin-top: 30px;
   height: 300px;
   overflow: scroll;
@@ -288,6 +301,7 @@ input, textarea, button {
 #contact{
   margin-right: 50px;
   margin-left: 50px;
+  margin-bottom: 300px;
 }
 
 .contact-header {
