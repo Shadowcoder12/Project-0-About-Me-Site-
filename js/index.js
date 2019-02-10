@@ -3,7 +3,7 @@ var app = express();
 
 var PORT = process.env.PORT || 3000;
 
-app.listen(port);
+app.listen(PORT);
 
 console.log("the script is working!");
 var love = "I love jquery, jquery script is working";
