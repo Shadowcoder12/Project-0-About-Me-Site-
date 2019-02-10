@@ -1,3 +1,6 @@
+var PORT = process.env.PORT;
+
+
 console.log("the script is working!");
 var love = "I love jquery, jquery script is working";
 
