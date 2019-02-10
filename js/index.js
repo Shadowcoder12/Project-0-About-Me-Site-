@@ -1,4 +1,4 @@
-
+var PORT = process.env.PORT ;
 
 
 console.log("the script is working!");
