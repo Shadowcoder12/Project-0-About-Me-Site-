@@ -1,5 +1,11 @@
   Welcome to my personal website!
 
+      Site link :
+    http://leonardo-fontenette.com/
+    http://www.leonardo-fontenette.com/
+
+    Github: https://github.com/lfonzi62/Project-0-About-Me-Site-
+
 The technologies I used are listed below:
 
 1. Semantic HTML
@@ -59,9 +65,10 @@ Biggest wins and challenges:
 
 3.  Fade in/ Fade out functionality
 
-4. Deploying the site
+4. Deploying the site on a server. Not deploying on heroku
 
 5. Emotional and time management
+
 
 
 
